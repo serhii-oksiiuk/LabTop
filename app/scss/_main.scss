@@ -1,0 +1,178 @@
+.darc{
+    background-color: $dark;
+    position: relative;
+    background-image: url(../images/Vector.png);
+    background-position: center 180px ;
+    background-repeat: no-repeat;
+    background-size: 585px;
+    background-attachment: fixed;
+    &:before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        left: 50%;
+        background-color: rgba(217, 223, 230, 0.2);
+    }
+    .container{
+        border-left: 1px solid rgba(217, 223, 230, 0.2);
+        border-right: 1px solid rgba(217, 223, 230, 0.2);
+        position: relative;
+        padding-top: 135px;
+        padding-bottom: 200px; 
+    }
+    &__item{
+        padding: 0 45px 0 100px;
+        margin-bottom: 100px;
+        img{
+            width: 50px;
+            margin-bottom: 25px;
+        }
+        p{
+            color: $p;
+        }
+    }
+}
+.white{
+    background-color: $white-bg;
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        left: 50%;
+        top: -100px;
+        background-color: rgba(18, 51, 106, 0.2);
+    }
+    &__contain-gradient{
+        position: relative;
+        z-index: 1;
+        top: -100px;
+        background: linear-gradient(to right, $blue 0%, $blue 50%, transparent 50%);
+    }
+    &__contain-gradient .row{
+        background-color: $blue;
+        padding: 75px 0;
+        background-image: url(../images/SymbolDocs.png);
+        background-position: left 50px;
+        background-repeat: no-repeat;
+    }
+    &__contain{
+        border-left: 1px solid rgba(18, 51, 106, 0.2);
+        border-right: 1px solid rgba(18, 51, 106, 0.2);
+        position: relative;
+        top: -100px;
+        padding-top: 135px;
+        padding-bottom: 300px; 
+        margin-bottom: -100px;
+    }
+    &__column{
+        position: relative;
+        a{
+            position: absolute;
+            left: calc((100% - 375px)/2);
+            margin-top: 35px;
+        }
+    }
+    &__column-left-flex{
+        display: flex;
+        *{
+            width: 50%;
+        }
+        p{
+            font-size: 24px;
+            line-height: 34px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+            color: $white;
+            padding-top: 40px;
+            margin-bottom: 55px;
+        }
+    }
+    &__column-right{
+        position: relative;
+        img{
+            position: absolute;
+            top: -150px;
+        }
+    }
+}
+@media (max-width: 1230px) { 
+    .darc,
+    .p30{
+        padding: 0 30px ;
+    }
+}
+@media (max-width: 768px) { 
+    .darc{
+        .container{
+            padding-top: 90px;
+            padding-bottom: 30px; 
+        }
+        &__item{
+            padding: 0 0 0 0;
+            margin-bottom: 50px;
+            img{
+                width: 34px;
+                margin-bottom: 15px;
+            }
+            p{
+                color: $p;
+            }
+        }
+    }
+    .white{
+        &:before{
+            top: 0px;
+        }
+        .container{
+            padding-top: 90px;
+            padding-bottom: 0px; 
+        }
+        &__contain-gradient{
+            top: 0px;
+            background: $blue;
+        }
+        &__contain{
+            top: 0px;
+            margin-bottom: 0;
+        }
+        &__column-left-flex{
+            flex-direction: column;   
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.32px;
+                padding-top: 48px;
+            }
+        }
+        .order2{
+            order: 2;
+            z-index: 1;
+        }
+        .order1{
+            order: 1;
+        }
+        &__column-right{
+            position: relative;
+            img{
+                position: absolute;
+                margin-top: -75px;
+                width: 130%;
+                left: 80px;
+            }
+        }
+        &__column{
+            position: relative;
+            a{
+                position: relative;
+                margin: 0 auto;
+                left: inherit;
+                margin-top: inherit;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: $white;
+    font-family: 'Proxima Nova Condensed Regular', sans-serif;
+}
+main{
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: auto;
+} 
+ul{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:$white;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6{
+    width: 50%;
+    float: left;
+}
+h2{
+    font-family: 'Proxima Nova Black';
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 1.445x;
+    text-transform: uppercase;
+}
+h3{
+    font-family: 'Proxima Nova Condensed Extrabold';
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+}
+h4{
+    font-family: 'Proxima Nova Condensed Extrabold';
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.65px;
+    margin-bottom: 50px;
+}
+p{
+    font-family: 'Proxima Nova Light';
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+}
+.title-white{
+    color: $white;
+}
+.title-black{
+    color: $dark;
+}
+.title{
+    margin-bottom: 120px;
+    span{
+        display: block;
+        width: 30px;
+        margin-bottom: 20px;
+    }
+}
+.btn{
+    font-family: 'Proxima Nova Condensed Extrabold';
+    margin: 0 auto;
+    max-width: 390px;
+    width: 100%;
+    height: 74px;
+    background: $yellow;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.46px;
+    text-transform: uppercase;
+    justify-content: center;
+    color: #233148;
+}
+@media (max-width: 768px) { 
+    h2{
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: 0.9px;
+    }
+    h3{
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 45px;
+    }
+    h4{
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.44px;
+        margin-bottom: 35px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+    }
+    .col-6{
+        width: 100%;
+    }
+    .title{
+        margin-bottom: 60px;
+        span{
+            display: block;
+            width: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}
